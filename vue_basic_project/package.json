@@ -1,0 +1,42 @@
+{
+		"name": "default",
+		"version": "0.1.0",
+		"private": true,
+		"scripts": {
+				"serve": "vue-cli-service serve",
+				"build": "vue-cli-service build",
+				"dev": "vue-cli-service serve --port 9999  --mode dev",
+				"int": "vue-cli-service serve --port 9999  --mode int",
+				"build:int": "vue-cli-service build --mode int",
+				"build:dev": "vue-cli-service build --mode dev"
+		},
+		"dependencies": {
+				"core-js": "^2.6.5",
+				"moment": "^2.27.0",
+				"query-string": "^6.13.1",
+				"vconsole": "^3.3.4",
+				"vue": "^2.6.10",
+				"vue-router": "^3.4.3"
+		},
+		"devDependencies": {
+				"@babel/core": "^7.3.4",
+				"@babel/preset-env": "^7.3.4",
+				"@vue/cli-plugin-babel": "^3.8.0",
+				"@vue/cli-service": "^3.8.0",
+				"autoprefixer": "^7.1.2",
+				"axios": "^0.19.2",
+				"lib-flexible": "^0.3.2",
+				"mint-ui": "^2.2.13",
+				"vue-template-compiler": "^2.6.10",
+				"vuex": "^3.1.0"
+		},
+		"engines": {
+				"node": ">= 6.0.0",
+				"npm": ">= 3.0.0"
+		},
+		"browserslist": [
+				"> 1%",
+				"last 2 versions",
+				"not ie <= 8"
+		]
+}
