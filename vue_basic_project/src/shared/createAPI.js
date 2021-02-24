@@ -44,8 +44,8 @@ axios.interceptors.request.use(
       try {
         // const token = await Vue.prototype.$asyncGetStorage({ key: 'token' });
         //
-        config.headers['X-APPLICATION-ID'] = 'DMO';
-        config.headers['Authorization'] = getCookie("LING_YUE_AUTH_TOKEN");
+        // config.headers['X-APPLICATION-ID'] = 'DMO';
+        // config.headers['Authorization'] = getCookie("LING_YUE_AUTH_TOKEN");
         // config.headers['Authorization']="ed348f27-2460-4e26-a561-406f779f86f1"
         console.log(getCookie())
         return config;
@@ -79,7 +79,7 @@ axios.interceptors.response.use(
     }
   },
   error => {
-    const errorData = error.response.data || {};
+    const errorData = error.response || {};
 
     if (errorData.status === 401100 || errorData.status === 401101) {
       reLogin(errorData);
@@ -93,8 +93,8 @@ axios.interceptors.response.use(
 );
 
 function reLogin(errorData) {
-  sessionStorage.setItem('LING_YUE_AUTH_TOKEN', '');
-  sessionStorage.setItem('LING_YUE_ORG_ID', '');
+  // sessionStorage.setItem('LING_YUE_AUTH_TOKEN', '');
+  // sessionStorage.setItem('LING_YUE_ORG_ID', '');
   // Message.error(errorData.status === 401100 ? '未登录，即将跳转登录页面' : '登录状态过期，即将跳转登录页面')
 }
 

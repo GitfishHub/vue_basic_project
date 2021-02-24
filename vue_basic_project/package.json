@@ -12,6 +12,7 @@
 		},
 		"dependencies": {
 				"core-js": "^2.6.5",
+				"es6-error": "^4.1.1",
 				"moment": "^2.27.0",
 				"query-string": "^6.13.1",
 				"vconsole": "^3.3.4",

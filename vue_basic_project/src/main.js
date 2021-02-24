@@ -3,7 +3,7 @@ import App from './App'
 import router from './router'
 
 //获取vue的版本号,根据不同的版本号采取不同的策略
-console.log(Vue.version)
+// console.log(Vue.version)
 
 //适配
 import 'lib-flexible'
