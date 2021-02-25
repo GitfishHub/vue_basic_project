@@ -80,7 +80,6 @@
 
 <script>
 import { test } from '@/api/home'
-import axios from 'axios'
 export default {
   name: 'HelloWorld',
   props: {
@@ -92,12 +91,10 @@ export default {
   },
   methods: {
     async init() {
-      // await test().then((res) => {
-      //   console.log(res, 'xxx')
-      // })
-      axios.get('https://api.apiopen.top/singlePoetry').then((res) => {
-        console.log(res, 'sss')
+      await test().then((res) => {
+        console.log(res, 'xxx')
       })
+
       // fetch('https://api.apiopen.top/singlePoetry')
       //   .then((res) => res.json())
       //   .then((res) => console.log(res))
