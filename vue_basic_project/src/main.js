@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Vant from 'vant'
+import 'vant/lib/index.css'
+Vue.use(Vant)
 //获取vue的版本号,根据不同的版本号采取不同的策略
 // console.log(Vue.version)
 
@@ -27,10 +29,6 @@ for (let key in vFilter) {
 // Vue.prototype.$md5 = md5;
 
 
-// import axios from 'axios'
-// // axios.defaults.headers['Content-Type'] = 'text/plain;charset=UTF-8';
-// Vue.prototype.$http = axios;
-// axios.defaults.timeout = 1000*10//10s超时停止加载
 
 //导入vconsole调试工具，发布的时候注释掉！！！
 // import vConsole from '@/assets/js/vconsole.js'

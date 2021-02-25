@@ -13,8 +13,11 @@
 		"dependencies": {
 				"core-js": "^2.6.5",
 				"es6-error": "^4.1.1",
+				"less": "^4.1.1",
+				"less-loader": "^8.0.0",
 				"moment": "^2.27.0",
 				"query-string": "^6.13.1",
+				"vant": "^2.12.6",
 				"vconsole": "^3.3.4",
 				"vue": "^2.6.10",
 				"vue-router": "^3.4.3"

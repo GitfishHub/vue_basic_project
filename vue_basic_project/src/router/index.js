@@ -22,6 +22,10 @@ export default new Router({
 		{
 			path: "/home",
 			component: Home,
-		}
+		},
+		{
+			path: "/button",
+			component: ()=>import('@/components/button.vue'),
+		},
 	]
 });

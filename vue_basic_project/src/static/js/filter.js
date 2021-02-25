@@ -1,7 +1,13 @@
 import moment from "moment"
 const vFilter = {
-  getTime: (value) => {
-    return moment(value).format("YYYY-MM-DD HH:mm:ss ")
+  getTime: (value, type) => {
+    if (type)
+    {
+      return moment(value).format(type)
+    } else
+    {
+      return moment(value).format("YYYY-MM-DD HH:mm:ss ")
+    }
   },
   encryption: (val, type) => {
     if (val) {
