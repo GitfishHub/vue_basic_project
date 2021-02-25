@@ -3,7 +3,9 @@ import App from './App'
 import router from './router'
 import Vant from 'vant'
 import 'vant/lib/index.css'
+import Less from 'less'
 Vue.use(Vant)
+Vue.use(Less)
 //获取vue的版本号,根据不同的版本号采取不同的策略
 // console.log(Vue.version)
 
